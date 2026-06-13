@@ -1,7 +1,7 @@
 ---
 name: 'C/C++ Code Standards'
 description: 'Condensed coding conventions for C and C++ files'
-applyTo: '**/*.c, **/*.h, **/*.cpp, **/*.hpp, **/*.cc, **/*.hh'
+applyTo: '**/*.c, **/*.h, **/*.cc, **/*.hh, **/*.cpp, **/*.hpp, **/*.cxx, **/*.hxx'
 ---
 
 # C/C++ Code Standards
