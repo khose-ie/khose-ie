@@ -67,7 +67,7 @@ author: "[author name, optional]"
 status: "backlog"  # optional values: backlog, implemented, outdated
 ---
 
-# Requirement Specification
+# Requirement Specification (replace [FUNCTION] with the function name, and [ID] with a unique identifier)
 
 
 ## Summary
