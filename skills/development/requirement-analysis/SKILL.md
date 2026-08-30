@@ -59,15 +59,16 @@ In S2 you must, for each extracted core action, iterate through the three dimens
 When you reach S4, you must output the Markdown file strictly following this example format. Crucially: include the choices the user confirmed in S3 in the **Decision Records** section.
 If the user specified a path and filename for the output file, save it directly. If they did not, ask: "Where would you like the Markdown file saved? Please provide a full path and filename."
 
-```markdown
+````markdown
 ---
 id: "[FUNCTION]-[ID]"
+name: "Function Name" # A very short summary of the function, e.g., "Delete Order"
 jira_id: "JIRA-001"
 author: "[author name, optional]"
 status: "backlog"  # optional values: backlog, implemented, outdated
 ---
 
-# Requirement Specification (replace [FUNCTION] with the function name, and [ID] with a unique identifier)
+# Requirement Specification (replace with [requirement id] - [requirement name])
 
 
 ## Summary
@@ -129,7 +130,7 @@ Write a paragraph describing background, goals, scope, and constraints for trace
 ## Appendix (Optional)
 - **Glossary**: [Definitions of key business terms]
 - **References**: [Prototype link / PRD link]
-```
+````
 
 
 ## Appendix: System Predefined "Common Missing Boundaries" Checklist (Must Proactively Check)
