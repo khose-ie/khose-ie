@@ -1,7 +1,10 @@
 ---
 name: html-table-to-markdown
-user-invocable: true
 description: "Use when converting HTML tables in Markdown documentation to Markdown pipe tables, especially OCPP documentation tables that contain description rows, colspan, or rowspan. Preserve source wording and validate that no HTML table tags remain."
+user-invocable: true
+metadata: 
+  version: v1
+  author: "khose-ie"
 ---
 
 # HTML Table To Markdown

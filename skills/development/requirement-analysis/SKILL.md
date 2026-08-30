@@ -2,6 +2,9 @@
 name: requirement-analysis
 description: "Use for analyzing requirements. When the user submits a requirement, the skill will analyze it with multiple loops to clarify the details of the requirement by asking questions to the user. And then, the skill will generate a requirement analysis document in Markdown format."
 user-invocable: true
+metadata:
+  version: v1
+  author: "khose-ie"
 ---
 
 # Requirement Analysis
