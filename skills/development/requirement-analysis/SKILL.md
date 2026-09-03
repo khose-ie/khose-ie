@@ -13,6 +13,13 @@ This skill is designed to assist in analyzing requirements. When a user submits 
 
 
 
+## Basic Guidelines
+
+- For all Q&A in this Skill, interactive components (such as checkboxes and dropdown menus) should be used preferentially for posing questions; if the platform does not support them, use clear numbered lists in the chat to ask questions.
+- When the user explicitly answers “no other questions” or “proceed to the next step,” the AI must not continue to probe further and must move on to the next step (to avoid infinite loops). However, if new points raised by the user during the current discussion have not yet reached consensus, the AI must first return to those points and continue the discussion until all raised points have been confirmed; only then may it proceed to the next step.
+
+
+
 ## Goal
 
 The goal of this skill is to clearly understand the user's requirement by asking looped questions and produce a structured Markdown document that captures all relevant details.
@@ -21,15 +28,19 @@ The goal of this skill is to clearly understand the user's requirement by asking
 
 ## Mandatory State Machine Flow Rules (Must Follow Strictly)
 
-You must operate in a loop across the following four states and are forbidden from skipping states:
+You must operate in a loop across the following 5 states and are forbidden from skipping states:
 
 - State S1 (Collect): Receive the user's raw verbal input and extract the core actions and objects.
-- State S2 (Question): Based on three dimensions (Action / Reaction / Boundary), list ambiguous points and ask the user numbered follow-up questions. (If possible, please use the windinow-view-asking style instead of list all question in the chat.)
-- State S3 (Discuss): Base on the information from S1, S2 and some additional data that the user provided, give some opinions and suggestions of you to improve the requirements. List all your suggestions and wait for the feedback of user. (If possible, please use the windinow-view-asking style instead of list all suggestions in the chat.)
-- State S4 (Confirm): After the user answers and feedback, compile a draft version of the requirements to let the user review. (The draft version don't need to includes all content of the output, only need the summary, description and titles of all use case.)
+- State S2 (Question): Based on three dimensions (Action / Reaction / Boundary), list ambiguous points and ask the user numbered follow-up questions.
+- State S3 (Discuss): Base on the information from S1, S2 and some additional data that the user provided, give some opinions and suggestions of you to improve the requirements. List all your suggestions and wait for the feedback of user.
+- State S4 (Confirm): After the user answers and feedback, compile a draft version of the requirements to let the user review. (The draft version don't need to includes all content of the output, only need the summary, description and the index table of use cases.)
 - State S5 (Generate): Only when the user explicitly inputs commands such as "confirm generate", "yes", or "OK" is the final Markdown document unlocked for output.
 
 
+
+If the overall project background or basic product information cannot be found before entering S1, or if the relevant information is insufficient, you need to enter the S0 phase first:
+
+- State S0 (Confirm basic product information): Ask the user to provide the project's basic information, including background (why this is being done), product information (what they want to build), target use cases (with examples), necessary system operation logic and high-level architecture, and the path to the general description document (if any). If the user does not provide this information, proactively follow up. After confirmation, if there is no document path, ask the user whether they need to create a new general product information document and have them specify the path and file name.
 
 ## Three-dimensional Clarification Logic (Checklist)
 
@@ -41,7 +52,7 @@ In S2 you must, for each extracted core action, iterate through the three dimens
 
 - Is this operation synchronous (waits for a result in real time) or asynchronous (puts a message on a queue / background job)?
 - If a user triggers the action repeatedly (e.g., double-clicks a button), should the system be idempotent and ignore the second trigger, return an "operation too frequent" error, or perform the action twice?
-- What's the confitions for enable/disable of this actions? If there are some related configurations for this action, what's the entrance, items and default values of these configurations.
+- What's the conditions for enable/disable of these actions? If there are some related configurations for this action, what's the entrance, items and default values of these configurations.
 - What's the conditions to trigger this action: in which object states is the operation allowed or disallowed? (For example: can an order in "cancelled" state be "Confirm Received"?)
 
 
@@ -66,7 +77,7 @@ In S2 you must, for each extracted core action, iterate through the three dimens
 When you reach S5, you must output the Markdown file strictly following this example format. Crucially: include the choices the user confirmed in S3 and S4 in the **Decision Records** section.
 
 - If the user specified a path and filename for the output file, save it directly. If they did not, ask: "Where would you like the Markdown file saved? Please provide a full path and filename."
-- Don't write repeated information in chapter **Constraints**, if the same information has been described in above content, do not say it again.
+- Don't write repeated information in chapter **Constraints**, if the same information has been described in above content, do not say it again. For example: If the content has already recorded "all pages except debug pages are limited to be modified", don't repeat it in the Constraints section, such as "scope: all pages except debug pages are limited to be modified; exception: debug pages".
 
 
 
@@ -203,5 +214,5 @@ For the "delete order" feature you mentioned, I have identified three boundary q
 
 - Terminator: Only when the user says "confirm generate" or "generate Markdown as is" are you allowed to output the Markdown file.
 - If in S2 the user says "use the generic/default option", you must reply: "To avoid ambiguity during the implementation phase, I cannot use the term 'generic' for now; please choose a default value from the options I list."
-- If in S2 the user says "this is the design scope" or "this is the another requirement's scope", you should not record any information about this question into the Markdown file like "xxx is out of scope of this requirements" or "xxx is not defined".
+- If the user indicates that a certain topic belongs to a different requirement or is outside the current scope, do not record any "out of scope" notes in the Markdown output. Only include information that is within the current requirement's scope.
 
