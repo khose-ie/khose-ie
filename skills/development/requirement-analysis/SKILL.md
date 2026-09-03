@@ -24,9 +24,11 @@ The goal of this skill is to clearly understand the user's requirement by asking
 You must operate in a loop across the following four states and are forbidden from skipping states:
 
 - State S1 (Collect): Receive the user's raw verbal input and extract the core actions and objects.
-- State S2 (Question): Based on three dimensions (Action / Reaction / Boundary), list ambiguous points and ask the user numbered follow-up questions. Absolutely do not output any XML tags during this stage.
-- State S3 (Confirm): After the user answers, compile a "Confirmed Decisions Summary" for the user to review and confirm.
-- State S4 (Generate): Only when the user explicitly inputs commands such as "confirm generate", "yes", or "OK" is the final Markdown document unlocked for output.
+- State S2 (Question): Based on three dimensions (Action / Reaction / Boundary), list ambiguous points and ask the user numbered follow-up questions. (If possible, please use the windinow-view-asking style instead of list all question in the chat.)
+- State S3 (Discuss): Base on the information from S1, S2 and some additional data that the user provided, give some opinions and suggestions of you to improve the requirements. List all your suggestions and wait for the feedback of user. (If possible, please use the windinow-view-asking style instead of list all suggestions in the chat.)
+- State S4 (Confirm): After the user answers and feedback, compile a draft version of the requirements to let the user review. (The draft version don't need to includes all content of the output, only need the summary, description and titles of all use case.)
+- State S5 (Generate): Only when the user explicitly inputs commands such as "confirm generate", "yes", or "OK" is the final Markdown document unlocked for output.
+
 
 
 ## Three-dimensional Clarification Logic (Checklist)
@@ -34,10 +36,13 @@ You must operate in a loop across the following four states and are forbidden fr
 In S2 you must, for each extracted core action, iterate through the three dimensions below and ask questions. If the user answers "anything/whatever", you must provide concrete A/B options to force a selection.
 
 
+
 **Dimension A: Action Triggering and Causality (Action)**
 
 - Is this operation synchronous (waits for a result in real time) or asynchronous (puts a message on a queue / background job)?
 - If a user triggers the action repeatedly (e.g., double-clicks a button), should the system be idempotent and ignore the second trigger, return an "operation too frequent" error, or perform the action twice?
+- What's the confitions for enable/disable of this actions? If there are some related configurations for this action, what's the entrance, items and default values of these configurations.
+- What's the conditions to trigger this action: in which object states is the operation allowed or disallowed? (For example: can an order in "cancelled" state be "Confirm Received"?)
 
 
 **Dimension B: Reaction Paths and Side Effects (Reaction)**
@@ -47,6 +52,7 @@ In S2 you must, for each extracted core action, iterate through the three dimens
 - Side effects: Does the operation need to coordinate other modules? (For example: placing an order must decrement stock, send messages, write logs. Are these strong transactional guarantees or eventual consistency?)
 
 
+
 **Dimension C: Boundaries and Constraints (Boundary)**
 
 - Data boundaries: For text fields, what is the maximum length? For numeric fields, what are min/max values? What does null/empty mean?
@@ -54,10 +60,15 @@ In S2 you must, for each extracted core action, iterate through the three dimens
 - Concurrency boundaries: When multiple people operate on the same data concurrently, use optimistic locking (version), pessimistic locking (row lock), or last-writer-wins?
 
 
+
 ## Output Specification (Markdown Section Definition)
 
-When you reach S4, you must output the Markdown file strictly following this example format. Crucially: include the choices the user confirmed in S3 in the **Decision Records** section.
-If the user specified a path and filename for the output file, save it directly. If they did not, ask: "Where would you like the Markdown file saved? Please provide a full path and filename."
+When you reach S5, you must output the Markdown file strictly following this example format. Crucially: include the choices the user confirmed in S3 and S4 in the **Decision Records** section.
+
+- If the user specified a path and filename for the output file, save it directly. If they did not, ask: "Where would you like the Markdown file saved? Please provide a full path and filename."
+- Don't write repeated information in chapter **Constraints**, if the same information has been described in above content, do not say it again.
+
+
 
 ````markdown
 ---
@@ -68,45 +79,60 @@ author: "[author name, optional]"
 status: "backlog"  # optional values: backlog, implemented, outdated
 ---
 
-# Requirement Specification (replace with [requirement id] - [requirement name])
-
-
-## Summary
-
-**Core Overview**:  
-Describe the core objective in one unambiguous sentence.
-
-**Detailed Description**:  
-Write a paragraph describing background, goals, scope, and constraints for traceability.
+# [requirement id] - [requirement name]
 
 
 
-## Decision Records
+## Introduction
 
-> Store all selected-choice answers the user confirmed during the clarification stage (S3) for traceability.
+**Summary**:  
+[Describe the core objective in one unambiguous sentence, a very short sentence.]
 
-| Question | Decision |
-| :--- | :--- |
-| Concurrency strategy | Optimistic locking (version-based) |
-| Failure return mode | HTTP 200 + unified business error code |
-| ... | ... |
+
+
+**Description**:  
+[Write a paragraph describing background, goals, scope, and constraints for traceability.]
+[If the description includes some content with a parallel relationship, please use a list to enumerate them.]
+
+
+
+**Definitions** (Optional)
+[Write some specific definitions here if there is, such as the data type, data length, UI statement, selections, etc..]
+
 
 
 ## Functional Requirements
 
+
+
+| ID | Use Case |
+| -- | -------- |
+| UC-01 | [Action Name](#UC-01: [Action Name]) |
+| UC-02 | [Action Name](#UC-02: [Action Name]) |
+
+
+
 ### UC-01: [Action Name]
+
+
 
 **Trigger Conditions**:  
 [Precise conditions that trigger this action]
+
+
 
 **Normal Flow**:
 1. [Step one]
 2. [Step two]
 3. ...
 
-**Exceptional / Alternative Flows**:
+
+
+**Exceptional Flows**:
 - **When [Condition A, e.g., out of stock]** → [System reaction, e.g., rollback transaction, return message xxx]
 - **When [Condition B, e.g., user banned]** → [System reaction]
+
+
 
 **Constraints**:
 - **Data length**: FieldA: `VARCHAR(50)`
@@ -127,9 +153,22 @@ Write a paragraph describing background, goals, scope, and constraints for trace
 - **Scalability**: [Add specific requirements if any]
 
 
+
 ## Appendix (Optional)
 - **Glossary**: [Definitions of key business terms]
 - **References**: [Prototype link / PRD link]
+
+
+
+## Appendix - Decision Records
+
+[Store all selected-choice answers the user confirmed during the clarification stage (S3 and S4) for traceability.]
+
+- Q: [Question 1]  
+  A: [User's confirmed answer]
+- Q: [Question 2]  
+  A: [User's confirmed answer]
+
 ````
 
 
@@ -162,6 +201,7 @@ For the "delete order" feature you mentioned, I have identified three boundary q
 
 ## Appendix: Special Instructions (Prevent AI Hallucination)
 
-If in S2 the user says "use the generic/default option", you must reply: "To avoid ambiguity during the implementation phase, I cannot use the term 'generic' for now; please choose a default value from the options I list."
-Terminator: Only when the user says "confirm generate" or "generate Markdown as is" are you allowed to output the Markdown file.
+- Terminator: Only when the user says "confirm generate" or "generate Markdown as is" are you allowed to output the Markdown file.
+- If in S2 the user says "use the generic/default option", you must reply: "To avoid ambiguity during the implementation phase, I cannot use the term 'generic' for now; please choose a default value from the options I list."
+- If in S2 the user says "this is the design scope" or "this is the another requirement's scope", you should not record any information about this question into the Markdown file like "xxx is out of scope of this requirements" or "xxx is not defined".
 
