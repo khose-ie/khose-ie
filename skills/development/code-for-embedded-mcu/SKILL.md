@@ -1,12 +1,12 @@
 ---
-name: "code-for-embedded-software"
-description: "Transforms design contracts (DESIGN-REQ-xxx.md) into production-ready C/C++/Rust code for STM32Cube HAL platforms. Enforces signature sanctity, incremental file generation (header-first), and external coding style adherence through a strict S1-S4 Q&A loop. Outputs source files and build system patches."
+name: "code-for-embedded-mcu"
+description: "Transforms design contracts (DESIGN-REQ-xxx.md) into production-ready C/C++/Rust code. Enforces signature sanctity, incremental file generation (header-first), and external coding style adherence through a strict S1-S4 Q&A loop. Outputs source files and build system patches."
 user-invocable: true
 metadata:
   version: "1.0"
 ---
 
-# Coding for Embedded Software
+# Coding for Embedded MCU
 
 
 

@@ -1,4 +1,4 @@
-# Embedded Software Coding Rules for C
+# C/C++ Coding Rules
 
 
 The rules within this document do not apply to third-party code or open-source code that is directly incorporated.
@@ -22,7 +22,7 @@ All rules in this document are divided into the following three levels:
 
 
 * **[Mandatory]** Files and folders should be named using all lowercase letters with `-` for separation.
-* **[Mandatory]** File names must adhere to the formatting rule: `modulename-submodulename.c`.
+* **[Mandatory]** File names must adhere to the formatting rule: `modulename-submodulename.cpp`.
 
 
 ```bash
@@ -213,16 +213,26 @@ memset(array, 0, sizeof(array));
 
 
 
-* **[Mandatory]** The names of structures, unions, and C-style enumerations should use strict camel Case. Start with a lowercase module name, and contine with upper case Struct name, and end with `_t`.
+* **[Mandatory]** The names of structures, unions, and C-style enumerations should use strict Camel Case. For C, start with a lowercase module name, continue with upper case Struct name, and end with `_t`. For C++, don't start with a lowercase module name, start with upper case Class name.
 
 ```c
-// Good case
+// Good case in C
 struct osTask_t
 {
 };
 
-// Good case
+// Good case in C
 enum osTaskStatus_t
+{
+};
+
+// Good case in C++
+class os::Task
+{
+};
+
+// Good case in C++
+enum os::TaskStatus
 {
 };
 ```
@@ -250,11 +260,17 @@ enum someKind_t
     SOME_KIND_REMOTE_ONE,
     SOME_KIND_LOCALIZATION_ONE
 };
+
+// Good case in C++
+enum class SomeKind
+{
+};
+
 ```
 
 
 
-* **[Mandatory]** The member fields of C-style enumerations must start with the uppercase version of the enumeration type name.
+* **[Mandatory]** The member fields of C-style enumerations must start with the uppercase version of the enumeration type name. For C++, the member fields of enumeration classes should start with an uppercase letter and use Camel Case.
 
 ```c
 // Good case
@@ -265,10 +281,17 @@ enum someKind_t
 };
 
 // Bad case
-enum someKind
+enum someKind_t
 {
     REMOTE_ONE,
     LOCALIZATION_ONE
+};
+
+//Good case in C++
+enum class SomeKind
+{
+    RemoteOne,
+    LocalizationOne
 };
 ```
 

@@ -1,13 +1,19 @@
 ---
-name: "design-for-embedded-software"
-description: "Use for generating structured design contracts for embedded systems (STM32/ARM, RTOS/Bare-metal, C/C++/Rust) based on requirement specifications. The skill ensures that hardware resource allocation, modular architecture, memory and timing constraints, and error handling strategies are locked before coding begins. It produces incremental design documents and conditionally updates common architecture documentation."
+name: "design-for-embedded-mcu"
+description: "Use for generating structured design contracts for embedded mcu systems (STM32/ARM, RTOS/Bare-metal, C/C++/Rust) based on requirement specifications. The skill ensures that hardware resource allocation, modular architecture, memory and timing constraints, and error handling strategies are locked before coding begins. It produces incremental design documents and conditionally updates common architecture documentation."
 user-invocable: true
 metadata: 
   version: "1.0"
 ---
 
-# Design for Embedded Software
+# Design for Embedded MCU
 
+
+
+## 基础准则
+
+- 本Skill的所有问答优先使用交互式组件（如复选框、下拉菜单）进行提问；若平台不支持，则使用清晰的编号列表在聊天中提问。
+- 当用户明确回答“没有其他问题”或“进入下一步”时，AI不得继续追问，必须进入下一步（避免无限循环）。但若本轮讨论中用户提出的新要点尚未达成共识，AI必须先回到相应要点继续讨论，直到所有已提出的要点均已确认，才能进入下一步。
 
 
 ## 目标
@@ -66,14 +72,14 @@ metadata:
 输出生成前必须严格经历以下五个阶段，**禁止跳跃**：
 
 - **S1 收集**：解析用户提供的需求 Spec（Markdown），提取核心功能点和已确认的决策记录。
-- **S2 追问**：针对本次需求尚未明确的条目，以**选择题**形式向用户提问（也可以让用户自定义答案）。若用户回答“随便/都行”，须给出两个具体选项逼其选择。需要参考从下方【嵌入式必问清单】。（如果可以，使用窗口视图的方式进行提问，而不是直接将问题输出到聊天频道）。
+- **S2 追问**：针对本次需求尚未明确的条目，以**选择题**形式向用户提问（也可以让用户自定义答案）。若用户回答“随便/都行”，须给出两个具体选项逼其选择。需要参考从下方【嵌入式必问清单】。
 - **S3 讨论**：询问用户的设计偏好（包括技术栈，层级结构规划），给出你的全部设计要点，并等待用户的反馈。当用户反馈并讨论完所有的设计要点后，需要询问用户是否有还有其他问题，用户回答没有后进入下一步。
 - **S4 确认**：用户回答并确认没有新的问题后，整理一份《设计决策摘要》（表格形式，含引脚、优先级、栈大小、模块划分），提交用户确认。
 - **S5 生成**：**仅当**用户明确输入“确认生成”或“可以”后，按照第 6 节模板输出最终设计文档。
 
 如果在进入S1前找不到整体项目背景或基础的架构设计内容，或信息不足，需要先进入S0阶段：
 
-- **S0 背景**：让用户提供项目的基础信息，包括背景（为什么要做这个），目的（想要做一个什么东西），目标使用场景（举例），技术栈（可以预先进行推荐），软件架构（分层结构，模块划分，通信方式等，可以预先进行推荐），以及通用架构文档的路径（如果有）。如果用户没有提供这些信息，需要主动追问。确认完成后，如果没有文档路径，需要询问用户是否需要创建一个新的通用架构文档，并让用户指定路径和文件名。
+- **S0 架构设计**：让用户提供项目的基础信息，包括背景（为什么要做这个），目的（想要做一个什么东西），目标使用场景（举例），技术栈（可以预先进行推荐），软件架构（分层结构，模块划分，通信方式等，可以预先进行推荐），以及通用架构文档的路径（如果有）。如果用户没有提供这些信息，需要主动追问。确认完成后，如果没有文档路径，需要询问用户是否需要创建一个新的通用架构文档，并让用户指定路径和文件名。
 
 
 
