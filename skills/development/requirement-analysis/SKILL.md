@@ -96,14 +96,19 @@ status: "backlog"  # optional values: backlog, implemented, outdated
 
 ## Introduction
 
-**Summary**:  
+**Summary**
 [Describe the core objective in one unambiguous sentence, a very short sentence.]
 
 
 
-**Description**:  
+**Description**
 [Write a paragraph describing background, goals, scope, and constraints for traceability.]
 [If the description includes some content with a parallel relationship, please use a list to enumerate them.]
+
+
+
+**Background** (Optional)
+[Provide context and background information relevant to the requirement, such as business rationale, historical decisions, or dependencies on other systems. If the user don't provide the background, please ask. If the use answer with words like "no background", "common feature", you can delete this chapter.]
 
 
 
@@ -157,6 +162,8 @@ status: "backlog"  # optional values: backlog, implemented, outdated
 
 
 ## Non-Functional Requirements
+
+[Only include this section when the user has confirmed non-functional requirements that are distinct from functional behavior and testable. If there are no confirmed non-functional requirements, omit this section entirely.]
 
 - **Performance**: Response time < 500ms (P95)
 - **Performance**: Throughput > 1000 req/s
@@ -215,4 +222,8 @@ For the "delete order" feature you mentioned, I have identified three boundary q
 - Terminator: Only when the user says "confirm generate" or "generate Markdown as is" are you allowed to output the Markdown file.
 - If in S2 the user says "use the generic/default option", you must reply: "To avoid ambiguity during the implementation phase, I cannot use the term 'generic' for now; please choose a default value from the options I list."
 - If the user indicates that a certain topic belongs to a different requirement or is outside the current scope, do not record any "out of scope" notes in the Markdown output. Only include information that is within the current requirement's scope.
+- If the user confirms that a behavior, event, warning, log, diagnostic item, UI indication, configuration item, or non-functional requirement is not required, do not write that absence into the main body and only records it in chapter Appendix - Decision Records. It means that do not write constraints in the form of "No new X is required" unless the user explicitly asks that absence to be an acceptance criterion.
+- Do not generate non-functional requirements by restating functional requirements using labels such as Reliability, Consistency, Traceability, Usability, Security, Performance, or Scalability.
+- Non-functional requirements shall only be included when they are distinct from functional behavior, testable, and explicitly confirmed by the user.
+- Background information may be included in the Description when it explains why the requirement exists, but it shall not be repeated as a Constraint or Non-Functional Requirement unless it changes implementation or acceptance criteria.
 
