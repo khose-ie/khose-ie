@@ -1,12 +1,12 @@
 ---
-name: "arch-for-desktop-application"
+name: "desktop-app-arch-design"
 description: "用于桌面应用程序的宏观架构设计。该技能收集项目背景、用户场景和约束条件；确定架构风格（单体式/前后端分离式/混合式）；选择技术栈；定义分层结构和模块通信方式；输出完整的架构设计文档（含决策记录）。产生一份稳定的架构文档，并在架构演进时产生增量变更记录。"
 user-invocable: true
 metadata:
   version: "1.0"
 ---
 
-# 桌面应用架构设计（Arch for Desktop Application）
+# 桌面应用架构设计（Arch Design for Desktop Application）
 
 本技能用于设计桌面应用程序的**系统架构**。架构设计关注的是**宏观系统结构**：系统整体形状、技术栈决策、层次边界、模块间通信模式等。
 该技能通过多轮问答循环，收集背景信息、讨论架构方案，最终输出一份完整的架构设计文档（Markdown 格式）。

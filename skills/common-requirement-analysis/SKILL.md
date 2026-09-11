@@ -1,5 +1,5 @@
 ---
-name: requirement-analysis
+name: "common-requirement-analysis"
 description: "Use for analyzing requirements. When the user submits a requirement, the skill will analyze it with multiple loops to clarify the details of the requirement by asking questions to the user. And then, the skill will generate a requirement analysis document in Markdown format."
 user-invocable: true
 metadata:
@@ -7,7 +7,7 @@ metadata:
   author: "khose-ie"
 ---
 
-# Requirement Analysis
+# Common Requirement Analysis
 
 This skill is designed to assist in analyzing requirements. When a user submits a requirement, the skill will engage in multiple loops of questioning to clarify the details of the requirement. After gathering sufficient information, the skill will generate a comprehensive requirement analysis document in Markdown format.
 

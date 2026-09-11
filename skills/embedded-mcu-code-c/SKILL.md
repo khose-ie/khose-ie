@@ -1,12 +1,12 @@
 ---
-name: "code-for-embedded-mcu"
-description: "Transforms design contracts (DESIGN-REQ-xxx.md) into production-ready C/C++/Rust code. Enforces signature sanctity, incremental file generation (header-first), and external coding style adherence through a strict S1-S4 Q&A loop. Outputs source files and build system patches."
+name: "embedded-mcu-code-c"
+description: "Transforms design contracts (DESIGN-REQ-xxx.md) into production-ready C/C++ code. Enforces signature sanctity, incremental file generation (header-first), and external coding style adherence through a strict S1-S4 Q&A loop. Outputs source files and build system patches."
 user-invocable: true
 metadata:
   version: "1.0"
 ---
 
-# Coding for Embedded MCU
+# Embedded MCU Code Generation (C/C++)
 
 
 
@@ -69,7 +69,7 @@ metadata:
 
 1. **构建系统**：本项目使用哪种构建工具？【A. Makefile / B. CMake / C. Cargo (build.rs) / D. Keil MDK 工程 / E. IAR 工程】，或根据用户详细回答处理。
 2. **头文件包含路径（Include Paths）**：设计中的 `#include "stm32f4xx_hal.h"` 等，是否需要特定的工程相对路径前缀？（例如 `../Drivers/STM32F4xx_HAL_Driver/Inc`）
-3. **编码风格规范（外部引用）**：请提供您希望遵循的编码规范文件路径（如 `docs/CODING_STYLE.md`、`.clang-format` 或 `rustfmt.toml`），或直接粘贴关键规则摘要（如缩进空格数、括号换行风格等）。
+3. **编码风格规范（外部引用）**：请提供您希望遵循的编码规范文件路径（如 `docs/CODING_STYLE.md`、`.clang-format`），或直接粘贴关键规则摘要（如缩进空格数、括号换行风格等）。
 
 
 
