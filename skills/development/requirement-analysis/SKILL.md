@@ -113,11 +113,15 @@ status: "backlog"  # optional values: backlog, implemented, outdated
 
 
 **Definitions** (Optional)
-[Write some specific definitions here if there is, such as the data type, data length, UI statement, selections, etc..]
-
+[Include only requirement-specific definitions that establish a testable shared meaning, such as data type, format, length, allowed values, fixed UI text, UI control labels, error codes. Do not define self-explanatory entities or role-specific aliases that are already clear from the use-case flows.]
 
 
 ## Functional Requirements
+
+
+
+> Please note:
+> Use cases are intended solely as references for requirement scenarios and do not define or limit the full scope of testing.
 
 
 
