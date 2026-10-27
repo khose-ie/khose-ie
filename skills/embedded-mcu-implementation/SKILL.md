@@ -1,12 +1,12 @@
 ---
-name: "embedded-mcu-code-c"
-description: "Transforms design contracts (DESIGN-REQ-xxx.md) into production-ready C/C++ code. Enforces signature sanctity, incremental file generation (header-first), and external coding style adherence through a strict S1-S4 Q&A loop. Outputs source files and build system patches."
+name: "embedded-mcu-implementation"
+description: "Transforms design contracts (DESIGN-REQ-xxx.md) into production-ready code for embedded MCU projects. Enforces signature sanctity, incremental file generation (header-first), and external coding style adherence through a strict S1-S4 Q&A loop. Outputs source files and build system patches."
 user-invocable: true
 metadata:
   version: "1.0"
 ---
 
-# Embedded MCU Code Generation (C/C++)
+# Embedded MCU Code Generation
 
 
 
@@ -17,7 +17,7 @@ metadata:
 核心定位是“设计蓝图的具体施工队”：
 
 - **绝对忠于设计**：设计文档中锁定的函数签名、数据类型、模块层级结构，在编码阶段**禁止任何修改**。
-- **增量式交付**：严格遵循 **头文件（.h）→ 源文件（.c/.rs）** 的顺序生成，并在每个关键文件产出后等待人工确认，防止方向跑偏。
+- **增量式交付**：严格遵循 **头文件（.h/.hpp）→ 源文件（.c/.cpp/.rs）** 的顺序生成，并在每个关键文件产出后等待人工确认，防止方向跑偏。
 
 
 
@@ -59,7 +59,7 @@ metadata:
 | **S1 收集** | 解析用户提供的设计文档，提取“新增/改动模块清单”、“接口签名代码骨架”、“私有状态变量”以及“并发与执行模型”。 |
 | **S2 追问** | 从下方【编码必问清单】中，选出本次编码尚未明确的条目，以选择题形式向用户提问。**必须问清楚头文件路径、构建系统和错误处理惯例**，否则绝不动笔。 |
 | **S3 确认** | 用户回答后，整理一份《编码执行计划》（包含要生成的文件列表、生成顺序、头文件路径映射），提交用户确认。 |
-| **S4 生成** | **仅当**用户明确输入“开始编码”或“确认”后，**按顺序**调用 `write_to_file` 生成文件。**先生成 .h 头文件，待用户确认签名无误后，再生成对应的 .c/.rs 源文件。** |
+| **S4 生成** | **仅当**用户明确输入“开始编码”或“确认”后，**按顺序**调用 `write_to_file` 生成文件。**先生成 .h/.hpp 头文件，待用户确认签名无误后，再生成对应的 .c/.cpp/.rs 源文件。** |
 
 
 
