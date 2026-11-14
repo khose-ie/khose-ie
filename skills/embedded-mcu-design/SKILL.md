@@ -1,5 +1,5 @@
 ---
-name: "embedded-mcu-func-design"
+name: "embedded-mcu-design"
 description: "Use for generating structured design contracts for embedded mcu systems (STM32/ARM, RTOS/Bare-metal, C/C++/Rust) based on requirement specifications. The skill ensures that hardware resource allocation, modular architecture, memory and timing constraints, and error handling strategies are locked before coding begins. It produces incremental design documents and conditionally updates common architecture documentation."
 user-invocable: true
 metadata: 

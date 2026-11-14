@@ -1,5 +1,5 @@
 ---
-name: "desktop-app-func-design"
+name: "desktop-app-design"
 description: "用于桌面应用程序的功能级详细设计。该技能基于需求文档和架构文档，针对单一功能/模块进行详细设计，产出包括：IPC接口契约、状态管理设计、数据持久化设计、错误处理设计、前端组件设计等。设计产出的所有接口签名在编码阶段禁止修改。"
 user-invocable: true
 metadata:

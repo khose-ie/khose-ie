@@ -1,5 +1,5 @@
 ---
-name: common-code-c
+name: sw-code-c
 description: "Use when implementing, refactoring, debugging, or reviewing C/C++ code: enforce consistent coding style, module organization, deterministic behavior, and explicit error handling."
 ---
 

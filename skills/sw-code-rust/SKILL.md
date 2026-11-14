@@ -1,5 +1,5 @@
 ---
-name: common-code-rust
+name: sw-code-rust
 description: "Use when implementing, refactoring, debugging, or reviewing embedded Rust code: enforce deterministic hardware access, explicit error handling, and safe module boundaries."
 ---
 
