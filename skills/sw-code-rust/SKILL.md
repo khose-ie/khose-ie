@@ -61,7 +61,7 @@ Use this skill when working on:
 - Avoid heap allocation in timing-critical or static contexts unless the project already uses it and the code clearly documents why.
 - Prefer explicit units in interfaces (`timeout_ms`, `period_us`, `baud_rate`).
 - Keep APIs minimal, cohesive, and ownership-clear: who initializes the peripheral, who owns the buffer, and who releases it.
-- Keep `unsafe` blocks narrow and justified; document the FFI invariant if non-obvious.
+- Keep `unsafe` blocks narrow and justified; document the FFI invariant if non-obvious. Usually, `unsafe` block could only be used in expressions instead of statements. For example use `unsafe { (*self.value.get()).write(v) };` instead of `unsafe { (*self.value.get()).write(v); }`.
 - No speculative refactors unrelated to the requested change.
 
 ## Style Baseline

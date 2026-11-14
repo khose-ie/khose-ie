@@ -27,7 +27,8 @@ impl Module
     /// Performs the main driver operation.
     pub fn operate(&self, data: &[u8], timeout_ms: u32) -> RetValue<()>
     {
-        if data.is_empty() {
+        if data.is_empty()
+        {
             return Err(ErrValue::Param);
         }
 
@@ -42,7 +43,8 @@ pub struct ModuleHandle;
 /// Module-local helper with narrow scope.
 fn module_validate_data(data: &[u8]) -> Result<(), ErrValue>
 {
-    if data.is_empty() {
+    if data.is_empty()
+    {
         return Err(ErrValue::Param);
     }
 
