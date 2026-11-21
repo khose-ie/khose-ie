@@ -1,0 +1,41 @@
+* text=auto eol=lf
+
+# Note: 'diff=rust' would require a custom diff driver named 'rust' defined in .git/config
+# If you don't use a diff driver, the following file patterns are set to text with LF endings.
+
+# Sources
+*.rs        text eol=lf
+
+# Cargo / config files
+Cargo.toml  text eol=lf
+Cargo.lock  text eol=lf
+*.toml      text eol=lf
+
+# Common text files
+*.md        text eol=lf
+docs/**     text eol=lf
+*.ron       text eol=lf
+*.toml      text eol=lf
+*.yml       text eol=lf
+*.yaml      text eol=lf
+*.sh        text eol=lf
+
+# Build artefacts / binaries
+target/             export-ignore
+target/**           binary
+*.rlib              binary
+*.rmeta             binary
+*.dSYM/             binary
+*.so                binary
+*.dylib             binary
+*.dll               binary
+*.exe               binary
+*.a                 binary
+*.o                 binary
+
+# IDE / editor configs (exclude from archives)
+.vscode/            export-ignore
+.idea/              export-ignore
+
+# MacOS
+.DS_Store           export-ignore
