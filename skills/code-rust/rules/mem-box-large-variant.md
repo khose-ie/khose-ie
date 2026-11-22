@@ -154,5 +154,4 @@ fn handle_ref(event: &Event) {
 ## See Also
 
 - [own-move-large](./own-move-large.md) - Boxing large types for cheap moves
-- [mem-smallvec](./mem-smallvec.md) - Alternative for inline small collections
 - [lint-deny-correctness](./lint-deny-correctness.md) - Enabling clippy lints

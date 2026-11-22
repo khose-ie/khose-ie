@@ -182,5 +182,4 @@ proptest.workspace = true
 ## See Also
 
 - [project-lib-main-split](./project-lib-main-split.md) - Workspace structure
-- [api-serde-optional](./api-serde-optional.md) - Optional dependencies
 - [lint-deny-correctness](./lint-deny-correctness.md) - Workspace lints

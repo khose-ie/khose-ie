@@ -163,4 +163,3 @@ fn send_to_thread(data: &[u8]) {
 
 - [own-cow-conditional](own-cow-conditional.md) - Use Cow for conditional ownership
 - [own-borrow-over-clone](own-borrow-over-clone.md) - Prefer borrowing over cloning
-- [mem-arena-allocator](mem-arena-allocator.md) - Arena allocators for batch operations

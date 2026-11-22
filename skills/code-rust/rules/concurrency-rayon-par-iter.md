@@ -63,5 +63,4 @@ fn sort_large(data: &mut [f64]) {
 ## See Also
 
 - [concurrency-scoped-threads](concurrency-scoped-threads.md) - borrow stack data across short-lived threads
-- [perf-iter-over-index](perf-iter-over-index.md) - prefer iterators over manual indexing
 - [async-spawn-blocking](async-spawn-blocking.md) - offload CPU work from async runtimes

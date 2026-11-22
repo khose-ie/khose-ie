@@ -87,6 +87,5 @@ fn process<T: Clone + Debug + Send + Sync, E: Error + From<IoError>>(value: T) -
 
 ## See Also
 
-- [name-lifetime-short](./name-lifetime-short.md) - Lifetime parameter naming
 - [name-types-camel](./name-types-camel.md) - Concrete type naming
 - [type-generic-bounds](./type-generic-bounds.md) - Trait bounds

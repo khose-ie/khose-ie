@@ -81,5 +81,4 @@ fn main() {
 ## See Also
 
 - [mem-with-capacity](mem-with-capacity.md) - pre-allocate with `with_capacity` when size is known
-- [perf-drain-reuse](perf-drain-reuse.md) - drain a collection to reuse its allocation
 - [collection-map-choice](collection-map-choice.md) - choosing the right map type

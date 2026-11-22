@@ -82,6 +82,3 @@ fn verify_password(_username: &str, _password: &Secret) -> bool { true }
 
 ## See Also
 
-- [obs-instrument-spans](obs-instrument-spans.md) - how to use `#[instrument]` and spans correctly
-- [obs-structured-fields](obs-structured-fields.md) - structured fields must be safe to emit
-- [error-thiserror-lib](error-thiserror-lib.md) - defining error types that don't accidentally expose secrets

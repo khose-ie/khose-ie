@@ -114,5 +114,4 @@ fn main() {
 ## See Also
 
 - [name-iter-convention](name-iter-convention.md) - `iter`/`iter_mut`/`into_iter` method naming
-- [perf-collect-once](perf-collect-once.md) - avoid collecting intermediate iterators
 - [api-common-traits](api-common-traits.md) - implement `Debug`, `Clone`, `PartialEq` eagerly

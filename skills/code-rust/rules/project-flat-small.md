@@ -130,4 +130,3 @@ src/
 
 - [project-mod-by-feature](./project-mod-by-feature.md) - Feature organization
 - [project-lib-main-split](./project-lib-main-split.md) - Lib/main separation
-- [project-mod-rs-dir](./project-mod-rs-dir.md) - Multi-file modules

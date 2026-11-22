@@ -60,4 +60,3 @@ Adding `const` to a function is a backwards-compatible, non-breaking change for 
 
 - [const-block](const-block.md) - force compile-time evaluation and assertions inline
 - [const-generics](const-generics.md) - parameterize types and functions over const values
-- [opt-inline-small](opt-inline-small.md) - inline small hot functions

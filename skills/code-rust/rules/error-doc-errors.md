@@ -141,5 +141,4 @@ pub fn might_fail() -> Result<(), Error> { Ok(()) }
 ## See Also
 
 - [doc-examples-section](./doc-examples-section.md) - Examples in documentation
-- [error-thiserror-lib](./error-thiserror-lib.md) - Defining error types
 - [api-must-use](./api-must-use.md) - Marking Results as must_use

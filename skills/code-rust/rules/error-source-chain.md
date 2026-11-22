@@ -150,6 +150,5 @@ enum MyError {
 
 ## See Also
 
-- [error-thiserror-lib](./error-thiserror-lib.md) - thiserror for error definitions
 - [error-context-chain](./error-context-chain.md) - Adding context to errors
 - [error-from-impl](./error-from-impl.md) - From implementations for ?

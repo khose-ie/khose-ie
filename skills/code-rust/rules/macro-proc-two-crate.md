@@ -140,4 +140,3 @@ pub fn derive_greet(input: TokenStream) -> TokenStream {
 - [macro-proc-syn-quote](macro-proc-syn-quote.md) - building proc-macros with syn and quote
 - [macro-private-helpers](macro-private-helpers.md) - hiding helpers behind `__private`
 - [project-workspace-deps](project-workspace-deps.md) - workspace dependency inheritance
-- [error-thiserror-lib](error-thiserror-lib.md) - thiserror as a real-world two-crate example

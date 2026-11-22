@@ -104,6 +104,4 @@ fn main() {
 
 ## See Also
 
-- [perf-ahash](perf-ahash.md) - swap in a faster hasher for non-adversarial maps
-- [perf-entry-api](perf-entry-api.md) - use `entry()` to avoid double lookups
 - [collection-seq-choice](collection-seq-choice.md) - choosing the right sequence type

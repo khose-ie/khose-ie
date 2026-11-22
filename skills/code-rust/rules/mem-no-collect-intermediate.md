@@ -126,6 +126,3 @@ let vec: Vec<_> = valid_items(&items).collect();  // Collection when needed
 
 ## See Also
 
-- [perf-collect-once](./perf-collect-once.md) - Single collect
-- [perf-iter-lazy](./perf-iter-lazy.md) - Lazy evaluation
-- [perf-iter-over-index](./perf-iter-over-index.md) - Iterator patterns

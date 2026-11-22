@@ -147,7 +147,6 @@ impl From<ParseIntError> for AppError { ... }
 
 ## See Also
 
-- [error-thiserror-lib](./error-thiserror-lib.md) - Using thiserror for libraries
 - [error-source-chain](./error-source-chain.md) - Preserving error chains
 - [error-question-mark](./error-question-mark.md) - The ? operator
 - [convert-tryfrom-fallible](./convert-tryfrom-fallible.md) - TryFrom for fallible conversions

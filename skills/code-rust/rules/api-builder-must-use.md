@@ -140,4 +140,3 @@ v.iter().map(|x| x * 2);  // Warning: iterators are lazy
 
 - [api-builder-pattern](./api-builder-pattern.md) - Builder pattern best practices
 - [api-must-use](./api-must-use.md) - General must_use guidelines
-- [error-result-over-panic](./error-result-over-panic.md) - Result types are must_use

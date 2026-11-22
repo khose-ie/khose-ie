@@ -167,5 +167,3 @@ fn send_data<T: Default, const SIZE: usize>(
 
 ## See Also
 
-- [perf-profile-first](perf-profile-first.md) - Profile before optimizing
-- [perf-black-box-bench](perf-black-box-bench.md) - Use black_box in benchmarks

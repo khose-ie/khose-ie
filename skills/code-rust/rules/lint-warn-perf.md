@@ -133,4 +133,3 @@ s.find('y');
 
 - [lint-warn-complexity](./lint-warn-complexity.md) - Complexity warnings
 - [mem-with-capacity](./mem-with-capacity.md) - Pre-allocation
-- [perf-profile-first](./perf-profile-first.md) - Profile before optimizing

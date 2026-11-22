@@ -126,6 +126,5 @@ fn load_config(path: &str) -> Result<Config, ConfigError> {
 
 ## See Also
 
-- [error-thiserror-lib](./error-thiserror-lib.md) - Defining error types
 - [error-question-mark](./error-question-mark.md) - Using ? operator
 - [type-option-nullable](./type-option-nullable.md) - Option vs Result

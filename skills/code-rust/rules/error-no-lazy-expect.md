@@ -90,6 +90,4 @@ let x = option.ok_or(Error::MissingValue)?;
 
 ## See Also
 
-- [error-expect-bugs-only](./error-expect-bugs-only.md) - When to use expect
-- [error-no-unwrap-prod](./error-no-unwrap-prod.md) - Avoiding unwrap
 - [error-no-unwrap](./error-no-unwrap.md) - Don't use `.unwrap()` in production code

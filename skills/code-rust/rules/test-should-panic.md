@@ -125,6 +125,4 @@ fn test_panics() -> Result<(), Error> {
 
 ## See Also
 
-- [error-result-over-panic](./error-result-over-panic.md) - Panic vs Result
-- [error-expect-bugs-only](./error-expect-bugs-only.md) - When to use expect
 - [test-descriptive-names](./test-descriptive-names.md) - Test naming

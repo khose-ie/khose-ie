@@ -74,4 +74,3 @@ fn make_table() -> [u64; 4] {
 ## See Also
 
 - [const-fn](const-fn.md) - write functions callable in const contexts
-- [mem-assert-type-size](mem-assert-type-size.md) - assert hot type sizes to prevent layout regressions

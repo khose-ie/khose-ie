@@ -148,4 +148,3 @@ ecow = "0.2"
 
 - [mem-boxed-slice](./mem-boxed-slice.md) - Box<str> for immutable strings
 - [own-cow-conditional](./own-cow-conditional.md) - Cow<str> for borrow-or-own
-- [mem-smallvec](./mem-smallvec.md) - Similar concept for Vec

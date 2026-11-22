@@ -84,4 +84,3 @@ fn main() {
 ## See Also
 
 - [collection-map-choice](collection-map-choice.md) - choosing between `HashMap`, `BTreeMap`, and `IndexMap`
-- [perf-ahash](perf-ahash.md) - swap in a faster hasher for non-adversarial sets

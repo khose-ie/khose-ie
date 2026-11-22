@@ -120,6 +120,3 @@ for i in 0..data.len() {
 
 ## See Also
 
-- [perf-iter-over-index](./perf-iter-over-index.md) - Performance details
-- [opt-bounds-check](./opt-bounds-check.md) - Bounds check elimination
-- [perf-iter-lazy](./perf-iter-lazy.md) - Lazy iterators

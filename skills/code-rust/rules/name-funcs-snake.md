@@ -73,4 +73,3 @@ fn process_data(input_data: &[u8]) -> Result<Output, Error> {
 
 - [name-types-camel](./name-types-camel.md) - Type naming
 - [name-consts-screaming](./name-consts-screaming.md) - Constant naming
-- [name-lifetime-short](./name-lifetime-short.md) - Lifetime naming

@@ -131,4 +131,3 @@ println!("Size of GameState: {}", std::mem::size_of::<GameState>());
 
 - [own-copy-small](./own-copy-small.md) - Cheap types should be Copy
 - [mem-box-large-variant](./mem-box-large-variant.md) - Boxing enum variants
-- [perf-profile-first](./perf-profile-first.md) - Measure before optimizing

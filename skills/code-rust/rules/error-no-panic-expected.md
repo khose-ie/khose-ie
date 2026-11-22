@@ -126,6 +126,4 @@ fn find(items: &[Item], id: u64) -> Option<&Item> {
 
 ## See Also
 
-- [error-result-over-panic](./error-result-over-panic.md) - Use Result
 - [error-no-unwrap](./error-no-unwrap.md) - Don't use `.unwrap()` in production code
-- [error-expect-bugs-only](./error-expect-bugs-only.md) - When to expect

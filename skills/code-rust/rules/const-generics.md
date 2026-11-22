@@ -87,4 +87,3 @@ Rust 1.65+ stabilized const generic defaults (`struct Buf<const N: usize = 64>`)
 ## See Also
 
 - [const-fn](const-fn.md) - mark functions `const fn` so they can be called in const contexts
-- [mem-assert-type-size](mem-assert-type-size.md) - assert type sizes to catch layout regressions

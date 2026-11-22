@@ -126,4 +126,3 @@ map.values()    // &V
 
 - [name-iter-type-match](./name-iter-type-match.md) - Iterator type naming
 - [name-iter-method](./name-iter-method.md) - Iterator method names
-- [perf-iter-over-index](./perf-iter-over-index.md) - Prefer iterators

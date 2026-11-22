@@ -152,6 +152,4 @@ let mut rarely_used = Vec::new();  // OK if rarely grown
 ## See Also
 
 - [mem-reuse-collections](mem-reuse-collections.md) - Reuse collections with clear()
-- [mem-smallvec](mem-smallvec.md) - Use SmallVec for usually-small collections
-- [perf-extend-batch](perf-extend-batch.md) - Use extend() for batch insertions
 - [collection-seq-choice](collection-seq-choice.md) - Pick the right sequence type
