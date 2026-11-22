@@ -133,4 +133,4 @@ But still prefer `?` when demonstrating error handling patterns.
 
 - [doc-examples-section](./doc-examples-section.md) - Writing examples
 - [doc-hidden-setup](./doc-hidden-setup.md) - Hiding setup code
-- [err-question-mark](./err-question-mark.md) - Error propagation
+- [error-question-mark](./error-question-mark.md) - Error propagation

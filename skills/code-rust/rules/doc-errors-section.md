@@ -118,5 +118,5 @@ Use intra-doc links to connect error variants to their definitions:
 ## See Also
 
 - [doc-panics-section](./doc-panics-section.md) - Documenting panics
-- [err-doc-errors](./err-doc-errors.md) - Error documentation patterns
+- [error-doc-errors](./error-doc-errors.md) - Error documentation patterns
 - [doc-intra-links](./doc-intra-links.md) - Linking to types

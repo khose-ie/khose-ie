@@ -137,6 +137,6 @@ default-run = "my-tool"  # Or specify another
 
 ## See Also
 
-- [proj-lib-main-split](./proj-lib-main-split.md) - Keep main.rs minimal
-- [proj-workspace-large](./proj-workspace-large.md) - Workspace for larger projects
-- [proj-flat-small](./proj-flat-small.md) - Simple project structure
+- [project-lib-main-split](./project-lib-main-split.md) - Keep main.rs minimal
+- [project-workspace-large](./project-workspace-large.md) - Workspace for larger projects
+- [project-flat-small](./project-flat-small.md) - Simple project structure

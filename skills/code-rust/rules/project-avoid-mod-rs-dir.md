@@ -66,6 +66,6 @@ self_named_module_files = "warn"  # Enforces adjacent style
 
 ## See Also
 
-- [proj-flat-small](./proj-flat-small.md) - Keep small projects flat
-- [proj-mod-by-feature](./proj-mod-by-feature.md) - Feature organization
-- [proj-pub-use-reexport](./proj-pub-use-reexport.md) - Re-export patterns
+- [project-flat-small](./project-flat-small.md) - Keep small projects flat
+- [project-mod-by-feature](./project-mod-by-feature.md) - Feature organization
+- [project-pub-use-reexport](./project-pub-use-reexport.md) - Re-export patterns

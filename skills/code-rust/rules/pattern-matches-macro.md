@@ -1,4 +1,4 @@
-# pat-matches-macro
+# pattern-matches-macro
 
 > Use `matches!()` for boolean pattern tests
 
@@ -103,5 +103,5 @@ assert_matches!(result, Ok(n) if n == 42);
 
 ## See Also
 
-- [pat-exhaustive-enum](pat-exhaustive-enum.md) - match enums exhaustively instead of using catch-all arms
+- [pattern-exhaustive-enum](pattern-exhaustive-enum.md) - match enums exhaustively instead of using catch-all arms
 - [name-is-has-bool](name-is-has-bool.md) - use `is_`, `has_`, `can_` prefixes for boolean methods

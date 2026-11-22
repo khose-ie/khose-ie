@@ -143,6 +143,6 @@ fn main() -> anyhow::Result<()> {
 
 ## See Also
 
-- [proj-bin-dir](proj-bin-dir.md) - Put multiple binaries in src/bin/
-- [proj-mod-by-feature](proj-mod-by-feature.md) - Organize modules by feature
+- [project-bin-dir](project-bin-dir.md) - Put multiple binaries in src/bin/
+- [project-mod-by-feature](project-mod-by-feature.md) - Organize modules by feature
 - [test-integration-dir](test-integration-dir.md) - Integration tests in tests/

@@ -119,6 +119,6 @@ pub struct ConfigError {
 
 ## See Also
 
-- [err-thiserror-lib](./err-thiserror-lib.md) - Error definition with thiserror
-- [err-context-chain](./err-context-chain.md) - Adding context to errors
+- [error-thiserror-lib](./error-thiserror-lib.md) - Error definition with thiserror
+- [error-context-chain](./error-context-chain.md) - Adding context to errors
 - [doc-examples-section](./doc-examples-section.md) - Documentation conventions

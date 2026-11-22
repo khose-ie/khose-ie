@@ -105,5 +105,5 @@ See the Rust Reference — "Object Safety" — at doc.rust-lang.org/reference/it
 ## See Also
 
 - [trait-dyn-vs-generic](trait-dyn-vs-generic.md) - choose between static and dynamic dispatch deliberately
-- [anti-type-erasure](anti-type-erasure.md) - don't use `Box<dyn Trait>` when `impl Trait` works
+- [mem-no-dyn-alloc-trait](mem-no-dyn-alloc-trait.md) - don't use `Box<dyn Trait>` when `impl Trait` works
 - [api-sealed-trait](api-sealed-trait.md) - prevent external implementations of a trait

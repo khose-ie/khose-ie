@@ -157,6 +157,6 @@ my-app-common = { path = "../common" }
 
 ## See Also
 
-- [proj-workspace-deps](./proj-workspace-deps.md) - Workspace dependencies
-- [proj-bin-dir](./proj-bin-dir.md) - Multiple binaries
-- [proj-lib-main-split](./proj-lib-main-split.md) - Lib/main separation
+- [project-workspace-deps](./project-workspace-deps.md) - Workspace dependencies
+- [project-bin-dir](./project-bin-dir.md) - Multiple binaries
+- [project-lib-main-split](./project-lib-main-split.md) - Lib/main separation

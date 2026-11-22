@@ -164,4 +164,4 @@ let contents = futures::future::try_join_all(
 
 - [async-spawn-blocking](./async-spawn-blocking.md) - How tokio::fs works internally
 - [async-tokio-runtime](./async-tokio-runtime.md) - Runtime configuration
-- [err-context-chain](./err-context-chain.md) - Adding path context to IO errors
+- [error-context-chain](./error-context-chain.md) - Adding path context to IO errors

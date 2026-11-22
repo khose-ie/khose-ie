@@ -1,4 +1,4 @@
-# pat-exhaustive-enum
+# pattern-exhaustive-enum
 
 > Match owned enums exhaustively; avoid catch-all `_` that hides new variants
 
@@ -86,4 +86,4 @@ fn handle_event(event: &some_crate::TheirEvent) {
 
 - [api-non-exhaustive](api-non-exhaustive.md) - use `#[non_exhaustive]` for future-proof enums in public APIs
 - [type-enum-states](type-enum-states.md) - use enums for mutually exclusive states
-- [pat-matches-macro](pat-matches-macro.md) - boolean pattern tests with `matches!()`
+- [pattern-matches-macro](pattern-matches-macro.md) - boolean pattern tests with `matches!()`

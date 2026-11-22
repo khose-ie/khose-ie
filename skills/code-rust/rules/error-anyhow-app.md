@@ -175,5 +175,5 @@ fn handle_error(err: anyhow::Error) {
 
 ## See Also
 
-- [err-thiserror-lib](err-thiserror-lib.md) - Use thiserror for libraries
-- [err-context-chain](err-context-chain.md) - Add context to errors
+- [error-thiserror-lib](error-thiserror-lib.md) - Use thiserror for libraries
+- [error-context-chain](error-context-chain.md) - Add context to errors

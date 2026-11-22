@@ -91,5 +91,5 @@ mod tests {
 
 ## See Also
 
-- [conv-tryfrom-fallible](conv-tryfrom-fallible.md) - implement `TryFrom` for your own fallible conversions
+- [convert-tryfrom-fallible](convert-tryfrom-fallible.md) - implement `TryFrom` for your own fallible conversions
 - [num-overflow-explicit](num-overflow-explicit.md) - handle integer overflow explicitly with `checked_`/`saturating_`/`wrapping_`

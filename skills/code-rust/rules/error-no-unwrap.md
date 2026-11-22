@@ -138,6 +138,6 @@ fn tests_only() { }
 
 ## See Also
 
-- [err-question-mark](err-question-mark.md) - Use ? for propagation
-- [err-result-over-panic](err-result-over-panic.md) - Return Result instead of panicking
-- [anti-expect-lazy](anti-expect-lazy.md) - Don't use expect for recoverable errors
+- [error-question-mark](error-question-mark.md) - Use ? for propagation
+- [error-result-over-panic](error-result-over-panic.md) - Return Result instead of panicking
+- [error-no-lazy-expect](error-no-lazy-expect.md) - Don't use expect for recoverable errors

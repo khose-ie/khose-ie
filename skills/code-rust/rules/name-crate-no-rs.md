@@ -73,6 +73,6 @@ name = "my-serde-impl"       # Instead of serde-rs-fork
 
 ## See Also
 
-- [proj-workspace-deps](./proj-workspace-deps.md) - Cargo configuration
+- [project-workspace-deps](./project-workspace-deps.md) - Cargo configuration
 - [doc-cargo-metadata](./doc-cargo-metadata.md) - Package metadata
 - [name-funcs-snake](./name-funcs-snake.md) - Naming conventions

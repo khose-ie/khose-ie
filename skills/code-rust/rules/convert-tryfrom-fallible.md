@@ -76,5 +76,5 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 ## See Also
 
 - [api-from-not-into](api-from-not-into.md) - implement `From`, not `Into`, for the same reason
-- [conv-fromstr-parsing](conv-fromstr-parsing.md) - standard hook for string→type parsing
+- [convert-fromstr-parsing](convert-fromstr-parsing.md) - standard hook for string→type parsing
 - [api-parse-dont-validate](api-parse-dont-validate.md) - parse into validated types at boundaries

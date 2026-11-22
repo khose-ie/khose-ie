@@ -94,6 +94,6 @@ fn demo() {
 
 ## See Also
 
-- [anti-type-erasure](anti-type-erasure.md) - don't use `Box<dyn Trait>` when `impl Trait` works
+- [mem-no-dyn-alloc-trait](mem-no-dyn-alloc-trait.md) - don't use `Box<dyn Trait>` when `impl Trait` works
 - [type-generic-bounds](type-generic-bounds.md) - add trait bounds only where needed
 - [trait-object-safety](trait-object-safety.md) - keep traits dyn-compatible when you need `dyn Trait`

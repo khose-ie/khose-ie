@@ -173,5 +173,5 @@ pub enum Ordering {  // Less, Equal, Greater is complete
 ## See Also
 
 - [api-sealed-trait](./api-sealed-trait.md) - Controlling trait implementations
-- [err-custom-type](./err-custom-type.md) - Error type design
+- [error-custom-type](./error-custom-type.md) - Error type design
 - [api-builder-pattern](./api-builder-pattern.md) - Alternative to struct literals

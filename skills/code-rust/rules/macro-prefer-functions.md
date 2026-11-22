@@ -56,6 +56,5 @@ fn main() {
 
 ## See Also
 
-- [anti-over-abstraction](anti-over-abstraction.md) - avoid unnecessary abstraction layers
 - [type-generic-bounds](type-generic-bounds.md) - add trait bounds only where needed
 - [macro-rules-hygiene](macro-rules-hygiene.md) - hygiene and `$crate` for declarative macros

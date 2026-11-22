@@ -93,5 +93,5 @@ let _maybe_parent: Option<Rc<Node>> = child.parent.borrow().upgrade();
 
 - [own-arc-shared](./own-arc-shared.md) - When you need thread-safe sharing
 - [own-refcell-interior](./own-refcell-interior.md) - Combining Rc with interior mutability
-- [conc-thread-local](./conc-thread-local.md) - Per-thread state in single-threaded-style code
+- [concurrency-thread-local](./concurrency-thread-local.md) - Per-thread state in single-threaded-style code
 - [mem-drop-order](./mem-drop-order.md) - Drop order matters for cyclic/`Weak` structures

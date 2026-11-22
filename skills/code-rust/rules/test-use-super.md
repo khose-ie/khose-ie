@@ -124,4 +124,4 @@ mod tests {
 
 - [test-cfg-test-module](./test-cfg-test-module.md) - Test module structure
 - [test-integration-dir](./test-integration-dir.md) - Integration tests
-- [proj-pub-crate-internal](./proj-pub-crate-internal.md) - Visibility modifiers
+- [project-pub-crate-internal](./project-pub-crate-internal.md) - Visibility modifiers

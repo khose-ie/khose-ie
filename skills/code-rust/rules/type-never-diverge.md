@@ -148,6 +148,6 @@ type StableNeverResult = Result<(), std::convert::Infallible>;
 
 ## See Also
 
-- [err-result-over-panic](./err-result-over-panic.md) - When to panic vs return Result
+- [error-result-over-panic](./error-result-over-panic.md) - When to panic vs return Result
 - [type-result-fallible](./type-result-fallible.md) - Result for errors
 - [opt-cold-unlikely](./opt-cold-unlikely.md) - Marking unlikely paths

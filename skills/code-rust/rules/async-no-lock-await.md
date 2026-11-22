@@ -150,4 +150,4 @@ async fn must_await_inside(state: &tokio::sync::Mutex<State>) {
 
 - [async-spawn-blocking](async-spawn-blocking.md) - Use spawn_blocking for CPU work
 - [async-clone-before-await](async-clone-before-await.md) - Clone data before await
-- [anti-lock-across-await](anti-lock-across-await.md) - Anti-pattern reference
+- [async-no-lock-across-await](async-no-lock-across-await.md) - Anti-pattern reference

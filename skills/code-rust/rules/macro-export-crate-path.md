@@ -84,4 +84,4 @@ macro_rules! greet {
 
 - [macro-rules-hygiene](macro-rules-hygiene.md) - using `$crate` for correct item resolution
 - [macro-private-helpers](macro-private-helpers.md) - hiding helpers used by exported macros
-- [proj-workspace-deps](proj-workspace-deps.md) - workspace dependency inheritance
+- [project-workspace-deps](project-workspace-deps.md) - workspace dependency inheritance

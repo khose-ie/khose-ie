@@ -66,5 +66,5 @@ autocfg = "1"
 
 ## See Also
 
-- [proj-feature-additive](proj-feature-additive.md) - design features to be strictly additive
+- [project-feature-additive](project-feature-additive.md) - design features to be strictly additive
 - [lint-cfg-check](lint-cfg-check.md) - catch cfg typos with unexpected_cfgs

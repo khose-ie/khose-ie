@@ -157,6 +157,6 @@ pub use serde::*;  // Usually too broad
 
 ## See Also
 
-- [proj-prelude-module](./proj-prelude-module.md) - Prelude pattern
-- [proj-pub-crate-internal](./proj-pub-crate-internal.md) - Internal visibility
+- [project-prelude-module](./project-prelude-module.md) - Prelude pattern
+- [project-pub-crate-internal](./project-pub-crate-internal.md) - Internal visibility
 - [api-non-exhaustive](./api-non-exhaustive.md) - API stability

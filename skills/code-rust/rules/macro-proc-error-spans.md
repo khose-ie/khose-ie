@@ -115,4 +115,4 @@ error: MyTrait requires named fields
 ## See Also
 
 - [macro-proc-syn-quote](macro-proc-syn-quote.md) - parsing with syn, quoting with quote
-- [err-thiserror-lib](err-thiserror-lib.md) - idiomatic library error types
+- [error-thiserror-lib](error-thiserror-lib.md) - idiomatic library error types

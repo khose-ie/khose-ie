@@ -150,6 +150,6 @@ pub mod prelude {
 
 ## See Also
 
-- [proj-pub-use-reexport](./proj-pub-use-reexport.md) - Re-export patterns
+- [project-pub-use-reexport](./project-pub-use-reexport.md) - Re-export patterns
 - [api-extension-trait](./api-extension-trait.md) - Extension traits
 - [doc-module-inner](./doc-module-inner.md) - Module documentation

@@ -77,6 +77,6 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 
 ## See Also
 
-- [conv-tryfrom-fallible](conv-tryfrom-fallible.md) - `TryFrom` for fallible non-string conversions
+- [convert-tryfrom-fallible](convert-tryfrom-fallible.md) - `TryFrom` for fallible non-string conversions
 - [type-newtype-validated](type-newtype-validated.md) - newtypes for validated data like `Email`, `Url`
 - [api-parse-dont-validate](api-parse-dont-validate.md) - parse into validated types at boundaries

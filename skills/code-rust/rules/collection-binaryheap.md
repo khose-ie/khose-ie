@@ -104,5 +104,5 @@ fn main() {
 
 ## See Also
 
-- [coll-seq-choice](coll-seq-choice.md) - choosing between `Vec`, `VecDeque`, and `LinkedList`
+- [collection-seq-choice](collection-seq-choice.md) - choosing between `Vec`, `VecDeque`, and `LinkedList`
 - [perf-iter-over-index](perf-iter-over-index.md) - prefer iterators over manual indexing when draining results

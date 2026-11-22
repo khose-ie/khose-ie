@@ -146,6 +146,6 @@ fn run() -> anyhow::Result<()> {
 
 ## See Also
 
-- [err-context-chain](err-context-chain.md) - Add context with .context()
-- [err-from-impl](err-from-impl.md) - Use #[from] for automatic conversion
-- [err-anyhow-app](err-anyhow-app.md) - Use anyhow for applications
+- [error-context-chain](error-context-chain.md) - Add context with .context()
+- [error-from-impl](error-from-impl.md) - Use #[from] for automatic conversion
+- [error-anyhow-app](error-anyhow-app.md) - Use anyhow for applications

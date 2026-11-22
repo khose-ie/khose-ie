@@ -134,4 +134,4 @@ if let Some(v) = opt.as_mut() {
 
 - [type-result-fallible](./type-result-fallible.md) - Result for errors
 - [type-enum-states](./type-enum-states.md) - Enums for states
-- [err-no-unwrap-prod](./err-no-unwrap-prod.md) - Handling Option safely
+- [error-no-unwrap-prod](./error-no-unwrap-prod.md) - Handling Option safely

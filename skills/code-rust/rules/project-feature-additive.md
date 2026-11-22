@@ -66,5 +66,5 @@ use alloc::vec::Vec;
 ## See Also
 
 - [api-serde-optional](api-serde-optional.md) - gate Serialize/Deserialize behind a feature flag
-- [proj-workspace-deps](proj-workspace-deps.md) - use workspace dependency inheritance
+- [project-workspace-deps](project-workspace-deps.md) - use workspace dependency inheritance
 - [lint-cfg-check](lint-cfg-check.md) - catch feature-gate typos with unexpected_cfgs

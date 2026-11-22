@@ -1,4 +1,4 @@
-# pat-if-let-chains
+# pattern-if-let-chains
 
 > Use `if let` chains to combine pattern bindings and conditions
 
@@ -77,5 +77,5 @@ Use `let ... else` when the goal is early return on failure; use if-let chains w
 
 ## See Also
 
-- [pat-let-else](pat-let-else.md) - early-return pattern extraction without nesting
-- [pat-matches-macro](pat-matches-macro.md) - boolean pattern tests with `matches!()`
+- [pattern-let-else](pattern-let-else.md) - early-return pattern extraction without nesting
+- [pattern-matches-macro](pattern-matches-macro.md) - boolean pattern tests with `matches!()`

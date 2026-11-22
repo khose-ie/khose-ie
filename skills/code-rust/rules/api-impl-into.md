@@ -157,4 +157,4 @@ let config = Config::new("myapp")
 
 - [api-impl-asref](./api-impl-asref.md) - When to use AsRef instead
 - [api-from-not-into](./api-from-not-into.md) - Why From is preferred
-- [err-from-impl](./err-from-impl.md) - From for error conversion
+- [error-from-impl](./error-from-impl.md) - From for error conversion

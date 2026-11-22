@@ -65,5 +65,5 @@ workspace = true
 ## See Also
 
 - [lint-workspace-lints](lint-workspace-lints.md) - configure lints at workspace level
-- [proj-feature-additive](proj-feature-additive.md) - design features to be strictly additive
+- [project-feature-additive](project-feature-additive.md) - design features to be strictly additive
 - [lint-warn-suspicious](lint-warn-suspicious.md) - enable suspicious lint group

@@ -125,6 +125,6 @@ src/
 
 ## See Also
 
-- [proj-flat-small](./proj-flat-small.md) - Keep small projects flat
-- [proj-pub-use-reexport](./proj-pub-use-reexport.md) - Clean public API
-- [proj-lib-main-split](./proj-lib-main-split.md) - Lib/main separation
+- [project-flat-small](./project-flat-small.md) - Keep small projects flat
+- [project-pub-use-reexport](./project-pub-use-reexport.md) - Clean public API
+- [project-lib-main-split](./project-lib-main-split.md) - Lib/main separation

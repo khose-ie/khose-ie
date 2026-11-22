@@ -103,4 +103,4 @@ fn test_handoff() {
 
 - [own-mutex-interior](own-mutex-interior.md) - prefer `Mutex<T>` when lock-free isn't required
 - [test-loom-concurrency](test-loom-concurrency.md) - exhaustively test concurrent code with loom
-- [conc-scoped-threads](conc-scoped-threads.md) - safely share stack data across threads
+- [concurrency-scoped-threads](concurrency-scoped-threads.md) - safely share stack data across threads

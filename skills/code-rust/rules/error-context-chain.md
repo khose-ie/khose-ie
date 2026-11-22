@@ -139,6 +139,6 @@ fn load_config(path: &str) -> Result<Config, AppError> {
 
 ## See Also
 
-- [err-anyhow-app](err-anyhow-app.md) - Use anyhow for applications
-- [err-source-chain](err-source-chain.md) - Use #[source] to chain errors
-- [err-question-mark](err-question-mark.md) - Use ? for propagation
+- [error-anyhow-app](error-anyhow-app.md) - Use anyhow for applications
+- [error-source-chain](error-source-chain.md) - Use #[source] to chain errors
+- [error-question-mark](error-question-mark.md) - Use ? for propagation

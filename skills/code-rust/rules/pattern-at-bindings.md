@@ -1,4 +1,4 @@
-# pat-at-bindings
+# pattern-at-bindings
 
 > Use `@` bindings to capture a value while matching it against a pattern
 
@@ -95,5 +95,5 @@ fn log_data(packet: &Packet) {
 
 ## See Also
 
-- [pat-exhaustive-enum](pat-exhaustive-enum.md) - match enums exhaustively to catch new variants
+- [pattern-exhaustive-enum](pattern-exhaustive-enum.md) - match enums exhaustively to catch new variants
 - [type-enum-states](type-enum-states.md) - use enums for mutually exclusive states

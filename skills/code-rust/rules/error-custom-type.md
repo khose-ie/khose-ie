@@ -147,6 +147,6 @@ pub struct QueryError {
 
 ## See Also
 
-- [err-thiserror-lib](./err-thiserror-lib.md) - thiserror for error definitions
-- [err-anyhow-app](./err-anyhow-app.md) - When to use anyhow instead
+- [error-thiserror-lib](./error-thiserror-lib.md) - thiserror for error definitions
+- [error-anyhow-app](./error-anyhow-app.md) - When to use anyhow instead
 - [api-non-exhaustive](./api-non-exhaustive.md) - Forward-compatible enums

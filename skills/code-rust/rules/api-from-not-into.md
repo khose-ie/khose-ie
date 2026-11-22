@@ -142,7 +142,7 @@ impl Into<Bar> for Foo {  // Warning: prefer From
 ## See Also
 
 - [api-impl-into](./api-impl-into.md) - Using Into in function parameters
-- [err-from-impl](./err-from-impl.md) - From for error types
+- [error-from-impl](./error-from-impl.md) - From for error types
 - [api-newtype-safety](./api-newtype-safety.md) - Newtype conversions
-- [conv-tryfrom-fallible](./conv-tryfrom-fallible.md) - TryFrom for fallible conversions
-- [conv-fromstr-parsing](./conv-fromstr-parsing.md) - FromStr for string parsing
+- [convert-tryfrom-fallible](./convert-tryfrom-fallible.md) - TryFrom for fallible conversions
+- [convert-fromstr-parsing](./convert-fromstr-parsing.md) - FromStr for string parsing

@@ -98,5 +98,5 @@ RUSTFLAGS="--cfg loom" cargo test --test loom_flag
 
 ## See Also
 
-- [conc-atomic-ordering](conc-atomic-ordering.md) - choose correct memory orderings
+- [concurrency-atomic-ordering](concurrency-atomic-ordering.md) - choose correct memory orderings
 - [test-criterion-bench](test-criterion-bench.md) - benchmark concurrent code after verifying correctness

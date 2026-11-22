@@ -116,6 +116,6 @@ ptr_arg = "warn"  # Catches &Vec, &String, &PathBuf
 
 ## See Also
 
-- [anti-string-for-str](./anti-string-for-str.md) - Similar for String
+- [mem-str-over-string](./mem-str-over-string.md) - Similar for String
 - [own-slice-over-vec](./own-slice-over-vec.md) - Slice patterns
 - [api-impl-asref](./api-impl-asref.md) - AsRef pattern

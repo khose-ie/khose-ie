@@ -144,4 +144,4 @@ cargo publish --dry-run
 
 - [doc-module-inner](./doc-module-inner.md) - Crate-level documentation
 - [lint-cargo-metadata](./lint-cargo-metadata.md) - Linting Cargo.toml
-- [proj-workspace-deps](./proj-workspace-deps.md) - Workspace management
+- [project-workspace-deps](./project-workspace-deps.md) - Workspace management

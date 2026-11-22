@@ -169,4 +169,4 @@ while let Some(result) = futures.next().await {
 
 - [async-join-parallel](./async-join-parallel.md) - Non-fallible concurrent futures
 - [async-select-racing](./async-select-racing.md) - First-to-complete semantics
-- [err-question-mark](./err-question-mark.md) - Error propagation
+- [error-question-mark](./error-question-mark.md) - Error propagation

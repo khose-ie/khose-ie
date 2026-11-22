@@ -134,5 +134,5 @@ multiple_crate_versions = "allow"  # Acceptable in this project
 ## See Also
 
 - [doc-cargo-metadata](./doc-cargo-metadata.md) - Cargo.toml metadata
-- [proj-workspace-deps](./proj-workspace-deps.md) - Workspace dependencies
+- [project-workspace-deps](./project-workspace-deps.md) - Workspace dependencies
 - [lint-deny-correctness](./lint-deny-correctness.md) - Correctness lints

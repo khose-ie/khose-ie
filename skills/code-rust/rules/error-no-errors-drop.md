@@ -127,6 +127,6 @@ ignored_unit_patterns = "warn"
 
 ## See Also
 
-- [err-result-over-panic](./err-result-over-panic.md) - Proper error handling
-- [err-context-chain](./err-context-chain.md) - Adding context
-- [anti-unwrap-abuse](./anti-unwrap-abuse.md) - Unwrap issues
+- [error-result-over-panic](./error-result-over-panic.md) - Proper error handling
+- [error-context-chain](./error-context-chain.md) - Adding context
+- [error-no-unwrap](./error-no-unwrap.md) - Unwrap issues

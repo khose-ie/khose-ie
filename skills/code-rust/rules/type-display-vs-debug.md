@@ -75,5 +75,5 @@ fn main() {
 ## See Also
 
 - [api-common-traits](api-common-traits.md) - implement `Debug`, `Clone`, `PartialEq` eagerly
-- [err-thiserror-lib](err-thiserror-lib.md) - `thiserror` generates correct `Display` from `#[error("...")]`
+- [error-thiserror-lib](error-thiserror-lib.md) - `thiserror` generates correct `Display` from `#[error("...")]`
 - [type-numeric-fmt](type-numeric-fmt.md) - hex/octal/binary formatting for numeric newtypes

@@ -113,4 +113,4 @@ impl Counter {
 
 - [own-rc-single-thread](./own-rc-single-thread.md) - Combining with Rc for shared ownership
 - [own-mutex-interior](./own-mutex-interior.md) - Thread-safe alternative
-- [conc-thread-local](./conc-thread-local.md) - `thread_local!` with `Cell`/`RefCell` for per-thread state
+- [concurrency-thread-local](./concurrency-thread-local.md) - `thread_local!` with `Cell`/`RefCell` for per-thread state

@@ -130,6 +130,6 @@ mod tests {
 
 ## See Also
 
-- [proj-pub-crate-internal](./proj-pub-crate-internal.md) - Crate visibility
-- [proj-pub-use-reexport](./proj-pub-use-reexport.md) - Re-export patterns
-- [proj-mod-by-feature](./proj-mod-by-feature.md) - Feature organization
+- [project-pub-crate-internal](./project-pub-crate-internal.md) - Crate visibility
+- [project-pub-use-reexport](./project-pub-use-reexport.md) - Re-export patterns
+- [project-mod-by-feature](./project-mod-by-feature.md) - Feature organization

@@ -1,4 +1,4 @@
-# pat-let-else
+# pattern-let-else
 
 > Use `let ... else` for early-return pattern extraction
 
@@ -64,6 +64,6 @@ fn get_id(map: &std::collections::HashMap<String, u64>, key: &str) -> Result<u64
 
 ## See Also
 
-- [err-question-mark](err-question-mark.md) - use `?` for error propagation
-- [anti-unwrap-abuse](anti-unwrap-abuse.md) - avoid `.unwrap()` in production code
-- [pat-exhaustive-enum](pat-exhaustive-enum.md) - match enums exhaustively
+- [error-question-mark](error-question-mark.md) - use `?` for error propagation
+- [error-no-unwrap](error-no-unwrap.md) - avoid `.unwrap()` in production code
+- [pattern-exhaustive-enum](pattern-exhaustive-enum.md) - match enums exhaustively

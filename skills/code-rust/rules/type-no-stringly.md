@@ -139,6 +139,5 @@ enum EventType {
 
 ## See Also
 
-- [anti-stringly-typed](./anti-stringly-typed.md) - Anti-pattern details
 - [type-newtype-validated](./type-newtype-validated.md) - Validated newtypes
 - [type-enum-states](./type-enum-states.md) - Enums for states

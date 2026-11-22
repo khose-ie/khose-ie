@@ -121,5 +121,5 @@ double_must_use = "warn"          # Redundant #[must_use]
 ## See Also
 
 - [api-builder-must-use](./api-builder-must-use.md) - Builder pattern must_use
-- [err-result-over-panic](./err-result-over-panic.md) - Result types require handling
+- [error-result-over-panic](./error-result-over-panic.md) - Result types require handling
 - [lint-deny-correctness](./lint-deny-correctness.md) - Enabling useful lints

@@ -125,4 +125,4 @@ When documenting a panicking function, point to safe alternatives:
 
 - [doc-errors-section](./doc-errors-section.md) - Documenting errors
 - [doc-safety-section](./doc-safety-section.md) - Documenting unsafe
-- [err-result-over-panic](./err-result-over-panic.md) - Preferring Result
+- [error-result-over-panic](./error-result-over-panic.md) - Preferring Result

@@ -165,5 +165,5 @@ pub struct Ast { ... }
 ## See Also
 
 - [doc-examples-section](./doc-examples-section.md) - Code examples in docs
-- [err-doc-errors](./err-doc-errors.md) - Documenting errors
+- [error-doc-errors](./error-doc-errors.md) - Documenting errors
 - [lint-deny-correctness](./lint-deny-correctness.md) - Lint settings

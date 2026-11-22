@@ -111,5 +111,5 @@ fn demo_counter() {
 
 ## See Also
 
-- [anti-type-erasure](anti-type-erasure.md) - avoid `Box<dyn Trait>` when `impl Trait` works
+- [mem-no-dyn-alloc-trait](mem-no-dyn-alloc-trait.md) - avoid `Box<dyn Trait>` when `impl Trait` works
 - [closure-static-vs-dyn](closure-static-vs-dyn.md) - static vs dynamic dispatch trade-offs for callbacks

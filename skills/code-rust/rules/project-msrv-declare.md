@@ -52,6 +52,6 @@ CI job pinning the MSRV toolchain (GitHub Actions example):
 
 ## See Also
 
-- [proj-workspace-deps](proj-workspace-deps.md) - use workspace dependency inheritance
+- [project-workspace-deps](project-workspace-deps.md) - use workspace dependency inheritance
 - [lint-cargo-metadata](lint-cargo-metadata.md) - warn on missing Cargo.toml metadata
 - [doc-cargo-metadata](doc-cargo-metadata.md) - fill Cargo.toml metadata fields
