@@ -1,5 +1,5 @@
 ---
-name: code-with-rust
+name: code-rust
 description: >
   Implements software features, modules, and refactors in idiomatic, production-ready Rust.
   Use when writing or modifying Rust code, resolving ownership or borrow-checker errors, designing APIs with traits and generics, handling errors with Result/thiserror/anyhow, writing async Rust with Tokio, improving performance, or running cargo, clippy, fmt, and test workflows.
