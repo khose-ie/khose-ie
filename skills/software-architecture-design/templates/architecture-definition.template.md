@@ -1,3 +1,11 @@
+---
+name: "architecture-definition"
+description: "Architecture definition documentation for the [Product-Name] application."
+version: "1.0"
+created: "2024-06-05"
+updated: "2024-06-05"
+---
+
 # Architecture Definition Documentation
 
 [Provide detailed definitions of the system-level definitions like the ERROR types, interfaces, and data structures. This document serves as a reference for the development team to understand the precise specifications and constraints of each element within the architecture.]

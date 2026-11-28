@@ -1,3 +1,11 @@
+---
+name: "architecture-communication"
+description: "Architecture communication documentation for the [Product-Name] application."
+version: "1.0"
+created: "2024-06-05"
+updated: "2024-06-05"
+---
+
 # Architecture Communication Documentation
 
 [This document describes architecture-level communication strategies, protocols, and contracts used across the system.]

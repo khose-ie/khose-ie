@@ -1,7 +1,9 @@
 ---
-id: "ARCH-MAIN"
 name: "architecture-design"
+description: "Architecture design for the [Product-Name] application."
 version: "1.0"
+created: "2024-06-05"
+updated: "2024-06-05"
 ---
 
 # [Product-Name] Architecture Design

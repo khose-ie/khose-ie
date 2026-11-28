@@ -1,7 +1,9 @@
 ---
-id: "ARCH-PERSIST"
 name: "architecture-persistent-data"
+description: "Architecture persistent data documentation for the [Product-Name] application."
 version: "1.0"
+created: "2024-06-05"
+updated: "2024-06-05"
 ---
 
 # Architecture Persistent Data Documentation

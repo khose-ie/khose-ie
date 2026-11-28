@@ -1,7 +1,9 @@
 ---
-id: "ARCH-CONFIG"
 name: "architecture-configuration"
+description: "Architecture configuration documentation for the [Product-Name] application."
 version: "1.0"
+created: "2024-06-05"
+updated: "2024-06-05"
 ---
 
 # Architecture Configuration Documentation
