@@ -5,8 +5,8 @@ description: >
   AI should follow this skill to ask question to the user to clarify details and give the detailed requirement specification and generate multiple requirement specification documents after the user approves.
 license: MIT
 metadata: 
-    version: 1.0.0
-    author: Khose-ie<khose-ie@outlook.com>
+  version: 1.0.0
+  author: Khose-ie<khose-ie@outlook.com>
 ---
 
 # Software Requirement Analysis Skill
